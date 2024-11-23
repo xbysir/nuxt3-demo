@@ -1,6 +1,5 @@
 <template>
   <div>
-    <NuxtIcon name="menu" class="text-[80px] text-[#00ff00]"></NuxtIcon>
     <div>pos: {{ x }}, {{ y }}</div>
     <strong> 姓名：{{ userInfo.userName }} 性别：{{ userInfo.sex }} </strong>
     <!-- Before -->
