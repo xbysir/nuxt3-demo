@@ -8,6 +8,7 @@ import eslintConfigPrettier from 'eslint-config-prettier'
 export default [
   {
     ignores: [
+      '.nuxt',
       'node_modules',
       'dist',
       '.gitignore',
