@@ -1,5 +1,6 @@
 <template>
   <div>
+    <NuxtIcon name="menu" class="text-[80px] text-[#00ff00]"></NuxtIcon>
     <div>pos: {{ x }}, {{ y }}</div>
     <strong> 姓名：{{ userInfo.userName }} 性别：{{ userInfo.sex }} </strong>
     <!-- Before -->
@@ -12,9 +13,4 @@ import { useUserStore } from '@/stores/user.js'
 const { x, y } = useMouse()
 const userInfo = useUserStore().userInfo
 </script>
-<style lang="scss" scoped>
-div {
-  background-color: $bgColor;
-  color: $theme;
-}
-</style>
+<style lang="scss" scoped></style>

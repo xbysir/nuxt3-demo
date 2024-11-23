@@ -16,6 +16,7 @@
     "@vueuse/core": "^11.3.0",
     "@vueuse/nuxt": "^11.3.0",
     "nuxt": "^3.14.1592",
+    "nuxt-icons": "^3.2.1",
     "pinia": "^2.2.6",
     "vue": "latest",
     "vue-router": "latest"
@@ -31,6 +32,7 @@
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "sass": "^1.81.0",
+    "sass-loader": "10",
     "typescript-eslint": "^8.15.0"
   }
 }
