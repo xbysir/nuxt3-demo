@@ -1,5 +1,6 @@
 <template>
   <div>
+    ceshi
     <NuxtRouteAnnouncer />
     <NuxtWelcome />
   </div>
