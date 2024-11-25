@@ -15,6 +15,7 @@
     "@pinia/nuxt": "^0.7.0",
     "@vueuse/core": "^11.3.0",
     "@vueuse/nuxt": "^11.3.0",
+    "address": "2.0.1",
     "nuxt": "^3.14.1592",
     "nuxt-icons": "^3.2.1",
     "pinia": "^2.2.6",
@@ -24,7 +25,6 @@
   "devDependencies": {
     "@eslint/js": "^9.15.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
-    "@types/tailwindcss": "^3.1.0",
     "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",

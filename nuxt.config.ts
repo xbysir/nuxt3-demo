@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const address = require('address')
+const localhost = address.ip() || 'localhost'
 export default defineNuxtConfig({
   srcDir: 'src/',
   compatibilityDate: '2024-11-01',
@@ -17,5 +19,9 @@ export default defineNuxtConfig({
         }
       }
     }
+  },
+  devServer: {
+    host: localhost,
+    port: 8303
   }
 })
