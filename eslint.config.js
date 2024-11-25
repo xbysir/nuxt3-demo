@@ -3,7 +3,7 @@ import eslint from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import eslintPluginVue from 'eslint-plugin-vue'
 import vueParser from 'vue-eslint-parser'
-import eslintConfigPrettier from 'eslint-config-prettier'
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 
 export default [
   {
@@ -29,7 +29,7 @@ export default [
   /** vue推荐配置 */
   ...eslintPluginVue.configs['flat/recommended'],
   /** prettier 配置 */
-  eslintConfigPrettier,
+  eslintPluginPrettierRecommended,
 
   //javascript 规则
   {
