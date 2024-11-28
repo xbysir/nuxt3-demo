@@ -16,6 +16,7 @@
     "@vueuse/core": "^11.3.0",
     "@vueuse/nuxt": "^11.3.0",
     "address": "2.0.1",
+    "ant-design-vue": "4.x",
     "nuxt": "^3.14.1592",
     "nuxt-icons": "^3.2.1",
     "pinia": "^2.2.6",

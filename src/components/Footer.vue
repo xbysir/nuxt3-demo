@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-box h-[200px] bg-[#242933]">
+  <div class="footer-box h-[200px] w-full bg-[#242933]">
     <div class="box g-width-box flex justify-between pt-[40px]">
       <div class="left text-[14px]">
         <div class="icon mb-[40px] h-[32px] text-[30px] text-white">演示logo</div>
