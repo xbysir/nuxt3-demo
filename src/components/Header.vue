@@ -1,11 +1,8 @@
 <template>
-  <header
-    class="sticky top-0 z-10 w-full bg-white"
-    style="height: 60px; line-height: 60px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)"
-  >
+  <header class="sticky top-0 z-10 h-[60px] w-full bg-white leading-[60px] shadow-md">
     <nav class="flex h-full w-full items-center justify-between">
       <div class="ml-4 font-bold text-green-600">
-        <nuxt-link to="/">Xiao BiYang</nuxt-link>
+        <nuxt-link to="/">Nuxt 3</nuxt-link>
       </div>
 
       <!-- Desktop navigation -->
@@ -15,10 +12,9 @@
             v-for="(item, index) in navItems"
             :key="index"
             :class="[
-              'border-t-2 border-transparent px-2 text-lg hover:border-green-600 hover:text-green-600',
+              'h-[60px] border-t-2 border-transparent px-2 text-lg leading-[60px] transition-all duration-300 ease-in-out hover:border-green-600 hover:text-green-600',
               { 'border-green-600 text-green-600': isActive(item.link) }
             ]"
-            style="height: 60px; line-height: 60px"
           >
             <nuxt-link :to="item.link">{{ item.name }}</nuxt-link>
           </li>
@@ -38,8 +34,10 @@
           <li
             v-for="(item, index) in navItems"
             :key="index"
-            :class="['text-lg hover:text-green-600', { 'text-green-600': isActive(item.link) }]"
-            style="height: 50px; line-height: 50px"
+            :class="[
+              'height-[50px] text-lg leading-[50px] hover:text-green-600',
+              { 'text-green-600': isActive(item.link) }
+            ]"
             @click="onClose(true)"
           >
             <nuxt-link :to="item.link">{{ item.name }}</nuxt-link>
