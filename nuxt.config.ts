@@ -38,5 +38,11 @@ export default defineNuxtConfig({
         proxy: 'http://testapi.xuexiluxian.cn/api/**'
       }
     }
+  },
+  tailwindcss: {
+    cssPath: '~/assets/styles/tailwind.css',
+    configPath: 'tailwind.config.js',
+    exposeConfig: false,
+    config: {}
   }
 })
