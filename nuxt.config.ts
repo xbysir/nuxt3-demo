@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['@/assets/styles/normailze.css'],
   modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@vueuse/nuxt'],
-  plugins: ['@/plugins/antd.js'],
+  plugins: ['@/plugins/antd.js', '@/plugins/aos.client.js'],
   vite: {
     // 样式处理配置
     css: {
