@@ -1,10 +1,10 @@
 <template>
   <div id="home-page">
     <!-- bg -->
-    <section class="bg-home min-h-80 bg-cover bg-center sm:min-h-screen">
+    <section class="bg-home h-screen bg-cover bg-center sm:min-h-screen">
       <div class="w-full text-center text-white">
         <div class="mx-auto">
-          <div class="mb-12 flex items-center justify-center pt-14 sm:mb-24 sm:pt-16" data-aos="fade-right">
+          <div class="mb-14 flex items-center justify-center pt-20 sm:mb-24 sm:pt-20" data-aos="fade-right">
             <img src="../assets/images/logo-big.png" alt="..." width="130" />
           </div>
           <h1 class="mb-12 text-6xl text-white" data-aos="fade-left">NUXT 3 NUXT!</h1>
