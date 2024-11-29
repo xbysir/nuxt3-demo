@@ -128,9 +128,9 @@
           cooperation.
         </p>
       </div>
-      <div class="content" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+      <div class="content" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <a-carousel effect="fade">
-          <a-row>
+          <a-row class="sm:!flex">
             <a-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
               <img class="w-full object-cover" src="../assets/images/portfolio-1.jpg" alt="" />
             </a-col>
@@ -142,7 +142,7 @@
             </a-col>
           </a-row>
 
-          <a-row>
+          <a-row class="sm:!flex">
             <a-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
               <img class="w-full object-cover" src="../assets/images/portfolio-4.jpg" alt="" />
             </a-col>
@@ -157,10 +157,12 @@
       </div>
     </section>
     <!-- statistics -->
-    <section class="statistics-bg bg-cover bg-center sm:h-80">
+    <section class="statistics-bg relative bg-cover bg-center sm:h-80">
       <div class="container mx-auto flex h-full flex-row items-center justify-center text-center">
         <div
           class="list mt-4 grid grid-cols-1 items-center justify-center gap-10 uppercase text-white sm:grid-cols-4 sm:flex-row sm:flex-wrap"
+          data-aos="fade-up"
+          data-aos-offset="0"
         >
           <div class="items">
             <div class="mb-2">
@@ -193,7 +195,6 @@
         </div>
       </div>
     </section>
-    <div class="h-1 bg-gray-200"></div>
     <!-- back top -->
     <BackTop />
   </div>

@@ -16,11 +16,14 @@ export default defineNuxtPlugin(nuxtApp => {
       // 以下选项可以通过 `data-aos-*` 属性覆盖
       duration: 1000, // 动画持续时间 (毫秒)
       easing: 'ease-out-quart', // 动画缓动函数
-      offset: 120, // 触发动画的偏移量 (px)
+      offset: 50, // 触发动画的偏移量 (px)
       delay: 0, // 动画延迟 (毫秒)
       once: false, // 动画是否只播放一次
       mirror: false, // 元素滚动出视窗时是否反向播放动画
       anchorPlacement: 'top-bottom' // 动画触发点位置
+    })
+    window.addEventListener('load', () => {
+      AOS.refresh() // 页面加载后刷新 AOS
     })
   }
 })
