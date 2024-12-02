@@ -5,8 +5,8 @@ export default defineNuxtPlugin(nuxtApp => {
   // 确保在客户端环境下执行
   if (process.client) {
     // 在 app mounted 后初始化 AOS
-    nuxtApp.vueApp.mixin({
-      mounted() {
+    nuxtApp.hook('app:mounted', () => {
+      setTimeout(() => {
         AOS.init({
           // 是否禁用 AOS (可接受值: 'phone', 'tablet', 'mobile', boolean, expression, function)
           disable: false,
@@ -39,12 +39,7 @@ export default defineNuxtPlugin(nuxtApp => {
           // 动画触发点位置
           anchorPlacement: 'top-bottom'
         })
-      },
-
-      // 在组件更新后刷新 AOS
-      updated() {
-        AOS.refresh()
-      }
+      }, 100)
     })
 
     // 监听路由变化
@@ -53,5 +48,10 @@ export default defineNuxtPlugin(nuxtApp => {
         AOS.refresh()
       }, 100)
     })
+  }
+  return {
+    provide: {
+      aos: AOS
+    }
   }
 })
