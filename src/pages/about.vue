@@ -153,7 +153,7 @@
 
 <script setup>
 useSeoMeta({
-  title: '关于我',
+  title: 'About Me',
   ogTitle: 'About Me - Developer Portfolio',
   description: 'Learn more about my experience, skills, and projects in web development.',
   ogDescription: 'Professional web developer with expertise in Vue.js, React, and Node.js.',
