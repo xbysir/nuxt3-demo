@@ -74,6 +74,15 @@ const router = useRouter()
 definePageMeta({
   layout: 'login'
 })
+useSeoMeta({
+  title: 'Login',
+  ogTitle: 'Login to Your App Name',
+  description: 'Securely login to access your account and manage your profile.',
+  ogDescription: 'Access your personalized dashboard and features by logging in to your account.',
+  ogImage: 'https://example.com/login-image.png',
+  twitterCard: 'summary_large_image',
+  robots: 'noindex, nofollow'
+})
 
 const onSubmit = () => {
   router.push('/')

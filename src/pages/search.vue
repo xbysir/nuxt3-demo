@@ -97,9 +97,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Back to top -->
-    <BackTop />
   </div>
 </template>
 

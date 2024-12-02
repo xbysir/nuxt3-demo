@@ -195,8 +195,6 @@
         </div>
       </div>
     </section>
-    <!-- back top -->
-    <BackTop />
   </div>
 </template>
 
