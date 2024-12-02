@@ -47,13 +47,13 @@
         <div class="flex flex-wrap items-center justify-center gap-2 text-center sm:justify-start">
           <span>Copyright © {{ new Date().getFullYear() }} Company Name</span>
           <span class="hidden sm:inline">|</span>
-          <a href="https://beian.miit.gov.cn/" target="_blank" class="hover:text-white">ICP License XXXXXXXX</a>
+          <a href="https://beian.miit.gov.cn/" target="_blank" class="hover:text-white">ICP License 343432211</a>
         </div>
 
         <div class="flex flex-wrap items-center justify-center gap-2 text-center sm:justify-end">
           <a href="https://beian.mps.gov.cn/" target="_blank" class="flex items-center hover:text-white">
             <img class="mr-1 h-[17px] w-[16px]" src="@/assets/images/badge.png" alt="Police Badge" />
-            <span>Police Record XXXXXXXX</span>
+            <span>Police Record 143435664444</span>
           </a>
         </div>
       </div>
