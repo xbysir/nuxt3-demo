@@ -4,7 +4,6 @@
     <Header />
     <slot />
     <Footer />
-
     <BackTop />
   </div>
 </template>
