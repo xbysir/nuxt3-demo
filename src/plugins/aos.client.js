@@ -1,29 +1,57 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-export default defineNuxtPlugin(nuxtApp => {
-  if (process.client) {
-    AOS.init({
-      // AOS 配置项
-      disable: false, // 是否禁用 AOS (可接受值: 'phone', 'tablet', 'mobile', boolean, expression, function)
-      startEvent: 'DOMContentLoaded', // AOS 初始化事件
-      initClassName: 'aos-init', // 初始化后添加的类名
-      animatedClassName: 'aos-animate', // 动画过程中添加的类名
-      useClassNames: false, // 是否将 `data-aos` 属性值作为类名添加
-      disableMutationObserver: false, // 是否禁用 MutationObserver (高级)
-      debounceDelay: 50, // 窗口大小调整时的去抖延迟 (高级)
-      throttleDelay: 99, // 页面滚动时的节流延迟 (高级)
 
-      // 以下选项可以通过 `data-aos-*` 属性覆盖
-      duration: 1000, // 动画持续时间 (毫秒)
-      easing: 'ease-out-quart', // 动画缓动函数
-      offset: 50, // 触发动画的偏移量 (px)
-      delay: 0, // 动画延迟 (毫秒)
-      once: false, // 动画是否只播放一次
-      mirror: false, // 元素滚动出视窗时是否反向播放动画
-      anchorPlacement: 'top-bottom' // 动画触发点位置
+export default defineNuxtPlugin(nuxtApp => {
+  // 确保在客户端环境下执行
+  if (process.client) {
+    // 在 app mounted 后初始化 AOS
+    nuxtApp.vueApp.mixin({
+      mounted() {
+        AOS.init({
+          // 是否禁用 AOS (可接受值: 'phone', 'tablet', 'mobile', boolean, expression, function)
+          disable: false,
+          // AOS 初始化事件
+          startEvent: 'DOMContentLoaded',
+          // 初始化后添加的类名
+          initClassName: 'aos-init',
+          // 动画过程中添加的类名
+          animatedClassName: 'aos-animate',
+          // 是否将 `data-aos` 属性值作为类名添加
+          useClassNames: true,
+          // 是否禁用 MutationObserver (高级)
+          disableMutationObserver: false,
+          // 窗口大小调整时的去抖延迟 (高级)
+          debounceDelay: 50,
+          // 页面滚动时的节流延迟 (高级)
+          throttleDelay: 99,
+          // 动画持续时间 (毫秒)
+          duration: 1000,
+          // 动画缓动函数
+          easing: 'ease-out-quart',
+          // 触发动画的偏移量 (px)
+          offset: 50,
+          // 动画延迟 (毫秒)
+          delay: 0,
+          // 动画是否只播放一次
+          once: true,
+          // 元素滚动出视窗时是否反向播放动画
+          mirror: false,
+          // 动画触发点位置
+          anchorPlacement: 'top-bottom'
+        })
+      },
+
+      // 在组件更新后刷新 AOS
+      updated() {
+        AOS.refresh()
+      }
     })
-    window.addEventListener('load', () => {
-      AOS.refresh() // 页面加载后刷新 AOS
+
+    // 监听路由变化
+    nuxtApp.$router.afterEach(() => {
+      setTimeout(() => {
+        AOS.refresh()
+      }, 100)
     })
   }
 })
