@@ -2,21 +2,22 @@ html {
   height: 100%;
   box-sizing: border-box;
 }
+
 body {
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
   font-family:
-    Helvetica Neue,
+    "Helvetica Neue",
     Helvetica,
-    PingFang SC,
-    Hiragino Sans GB,
-    Microsoft YaHei,
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
     Arial,
     sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
 }
 
 /* 定义整个滚动条 */
@@ -27,15 +28,15 @@ body {
 
 /* 滚动条的轨道 */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* 设置轨道的背景色 */
   border-radius: 10px; /* 设置轨道的圆角 */
+  background: #f1f1f1; /* 设置轨道的背景色 */
 }
 
 /* 滚动条的滑块（即拖动的部分） */
 ::-webkit-scrollbar-thumb {
-  background: #888; /* 设置滑块的颜色 */
-  border-radius: 10px; /* 设置滑块的圆角 */
   border: 3px solid #f1f1f1; /* 设置滑块边框，增加视觉效果 */
+  border-radius: 10px; /* 设置滑块的圆角 */
+  background: #888888; /* 设置滑块的颜色 */
 }
 
 /* 滚动条滑块的鼠标悬停状态 */
@@ -45,8 +46,8 @@ body {
 
 /* 滚动条按钮（不常用，通常只在水平和垂直同时滚动时出现） */
 ::-webkit-scrollbar-button {
-  background-color: #ddd;
   display: block;
+  background-color: #dddddd;
 }
 
 label {
@@ -67,8 +68,8 @@ p {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -80,9 +81,9 @@ a:active {
 a,
 a:focus,
 a:hover {
-  cursor: pointer;
-  color: inherit;
   text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 div:focus {

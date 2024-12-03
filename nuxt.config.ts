@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   css: ['@/assets/styles/normailze.css'],
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@vueuse/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@vueuse/nuxt', '@nuxtjs/stylelint-module'],
   plugins: ['@/plugins/antd.js', '@/plugins/aos.client.js'],
   vite: {
     // 样式处理配置

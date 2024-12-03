@@ -30,9 +30,9 @@ onUnmounted(() => {
   position: fixed;
   top: 0;
   left: 0;
-  height: 4px;
-  padding-bottom: 2px;
-  transition: width 0.2s ease;
   z-index: 9999;
+  padding-bottom: 2px;
+  height: 4px;
+  transition: width 0.2s ease;
 }
 </style>

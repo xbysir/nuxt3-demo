@@ -17,7 +17,7 @@
       <div class="title mb-4 text-center">
         <div
           class="inline-block py-3 text-4xl font-bold uppercase text-black"
-          style="border-top: 1px solid #ccc; border-bottom: 1px solid #ccc"
+          style="border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc"
           data-aos="fade-up"
         >
           About me
@@ -67,7 +67,7 @@
       <div class="title mb-4 text-center">
         <div
           class="inline-block py-3 text-4xl font-bold uppercase text-white"
-          style="border-top: 1px solid #ccc; border-bottom: 1px solid #ccc"
+          style="border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc"
           data-aos="fade-up"
         >
           SERVICES
@@ -76,7 +76,7 @@
       <div class="content" data-aos="zoom-out-up">
         <div class="row-list grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <div class="col-lg-4 m-2 flex flex-col items-center">
-            <CodeSandboxOutlined style="font-size: 60px; color: #fff" />
+            <CodeSandboxOutlined style="font-size: 60px; color: #ffffff" />
             <h3 class="mb-3 mt-2 text-xl text-white">Consulting</h3>
             <p class="text-xs text-white">
               On on produce colonel pointed. Just four sold need over how any. In to september suspicion determine he
@@ -86,7 +86,7 @@
             </p>
           </div>
           <div class="col-lg-4 m-2 flex flex-col items-center">
-            <Html5Outlined style="font-size: 60px; color: #fff" />
+            <Html5Outlined style="font-size: 60px; color: #ffffff" />
             <h3 class="mb-3 mt-2 text-xl text-white">HTML Coding</h3>
             <p class="text-xs text-white">
               On on produce colonel pointed. Just four sold need over how any. In to september suspicion determine he
@@ -96,7 +96,7 @@
             </p>
           </div>
           <div class="col-lg-4 m-2 flex flex-col items-center">
-            <SkypeOutlined style="font-size: 60px; color: #fff" />
+            <SkypeOutlined style="font-size: 60px; color: #ffffff" />
             <h3 class="mb-3 mt-2 text-xl text-white">PHP webdelopment</h3>
             <p class="text-xs text-white">
               On on produce colonel pointed. Just four sold need over how any. In to september suspicion determine he
@@ -118,7 +118,7 @@
       <div class="title mx-auto mb-4 text-center sm:w-1/2">
         <div
           class="inline-block py-3 text-4xl font-bold uppercase"
-          style="border-top: 1px solid #ccc; border-bottom: 1px solid #ccc"
+          style="border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc"
           data-aos="fade-up"
         >
           My customers said about me

@@ -77,7 +77,7 @@ const isActive = link => {
 
 <style scoped>
 li.active {
-  color: #4caf50;
   border-color: #4caf50;
+  color: #4caf50;
 }
 </style>
