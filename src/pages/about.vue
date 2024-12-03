@@ -152,6 +152,7 @@
 </template>
 
 <script setup>
+import { getDocsApi, getDocsApi2 } from '~/api/about'
 useSeoMeta({
   title: 'About Me',
   ogTitle: 'About Me - Developer Portfolio',
@@ -160,15 +161,8 @@ useSeoMeta({
   ogImage: 'https://example.com/about-image.png',
   twitterCard: 'summary_large_image'
 })
-// 你也可以使用useFetch作为useAsyncData + $fetch的快捷方式
-const { data, error, refresh } = await useFetch('/api/slider/getSliders')
-
-// 在SSR中数据将被获取两次，一次在服务器端，一次在客户端。
-const dataTwice = await $fetch('/api/slider/getSliders')
-console.log(dataTwice)
-
-// 在SSR中，数据仅在服务器端获取并传递到客户端。
-// const { data, error } = await useAsyncData('item', () => $fetch('/api/slider/getSliders'))
-
-console.log(data.value.data.list, '数据')
+const res = await getDocsApi()
+console.log(res, 'data1')
+const res1 = await getDocsApi2()
+console.log(res1.data.value, 'data2')
 </script>
