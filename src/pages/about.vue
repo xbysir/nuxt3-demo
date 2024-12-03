@@ -160,8 +160,15 @@ useSeoMeta({
   ogImage: 'https://example.com/about-image.png',
   twitterCard: 'summary_large_image'
 })
-</script>
+// 你也可以使用useFetch作为useAsyncData + $fetch的快捷方式
+const { data, error, refresh } = await useFetch('/api/slider/getSliders')
 
-<style scoped>
-/* 如果需要的话，这里可以添加自定义样式 */
-</style>
+// 在SSR中数据将被获取两次，一次在服务器端，一次在客户端。
+const dataTwice = await $fetch('/api/slider/getSliders')
+console.log(dataTwice)
+
+// 在SSR中，数据仅在服务器端获取并传递到客户端。
+// const { data, error } = await useAsyncData('item', () => $fetch('/api/slider/getSliders'))
+
+console.log(data.value.data.list, '数据')
+</script>

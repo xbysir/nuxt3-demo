@@ -3,6 +3,7 @@ module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-recommended-vue'],
   plugins: ['stylelint-order'],
   rules: {
+    'no-empty-source': null,
     // 禁止空块
     'block-no-empty': true,
     // 颜色6位长度

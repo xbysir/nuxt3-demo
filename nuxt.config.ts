@@ -2,6 +2,12 @@
 const address = require('address')
 const localhost = address.ip() || 'localhost'
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      API_BASE_DEV: 'http://testapi.xuexiluxian.cn/api',
+      API_BASE_PROD: 'http://testapi.xuexiluxian.cn/api'
+    }
+  },
   srcDir: 'src/',
   app: {
     layoutTransition: { name: 'layout', mode: 'out-in' }
@@ -31,7 +37,8 @@ export default defineNuxtConfig({
   nitro: {
     devProxy: {
       '/api': {
-        target: 'http://testapi.xuexiluxian.cn/api', // 后端的接口地址
+        // 后端的接口地址
+        target: 'http://testapi.xuexiluxian.cn/api',
         changeOrigin: true,
         prependPath: true
       }
