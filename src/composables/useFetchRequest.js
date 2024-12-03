@@ -1,10 +1,12 @@
 import { useFetch, useRuntimeConfig } from '#app'
+import { useUserStore } from '@/stores/user.js'
 
 // 请求拦截器
-function handleRequest({ options }) {
+function handleRequest({ options }, token) {
   options.headers = {
     ...options.headers,
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    ...(token ? { Authorization: `Bearer ${token}` } : {})
   }
 }
 
@@ -30,11 +32,15 @@ function createUseFetchRequest(method) {
 
     const requestUrl = new URL(url, options.customBaseURL || baseURL).toString()
 
+    // 从状态管理中获取 token
+    const userStore = useUserStore()
+    const token = userStore.token || options.token
+
     return await useFetch(requestUrl, {
       ...options,
       method,
       body: data,
-      onRequest: handleRequest,
+      onRequest: req => handleRequest(req, token),
       onResponse: handleResponse
     })
   }

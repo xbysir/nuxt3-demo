@@ -70,6 +70,8 @@
 </template>
 <script setup>
 import { useRouter } from 'vue-router'
+import { useUserStore } from '@/stores/user.js'
+const userStore = useUserStore()
 const router = useRouter()
 definePageMeta({
   layout: 'login'
@@ -84,8 +86,16 @@ useSeoMeta({
   robots: 'noindex, nofollow'
 })
 
+const userInfo = ref({
+  userName: '易师傅',
+  id: 1,
+  sex: '男'
+})
+
 const onSubmit = () => {
   router.push('/')
+  userStore.setUserInfo(userInfo.value)
+  userStore.setToken('nuxt3_token_1234345555')
 }
 </script>
 
