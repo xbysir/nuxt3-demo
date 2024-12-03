@@ -3,6 +3,9 @@ const address = require('address')
 const localhost = address.ip() || 'localhost'
 export default defineNuxtConfig({
   srcDir: 'src/',
+  app: {
+    layoutTransition: { name: 'layout', mode: 'out-in' }
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   css: ['@/assets/styles/normailze.css'],
