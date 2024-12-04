@@ -37,6 +37,7 @@
     "address": "2.0.1",
     "ant-design-vue": "4.x",
     "aos": "^2.3.4",
+    "gsap": "^3.12.5",
     "nuxt": "^3.14.1592",
     "nuxt-icons": "^3.2.1",
     "pinia": "^2.2.6",
