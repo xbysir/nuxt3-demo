@@ -4,6 +4,10 @@
       <h2>元素 {{ i }}</h2>
       <p>这是第 {{ i }} 个元素的内容。</p>
     </div>
+    <div class="fade-element1">
+      <h2>元素 与</h2>
+      <p>这是第 匹配 个元素的内容。</p>
+    </div>
   </div>
 </template>
 
@@ -17,6 +21,7 @@ const handleLeave = () => {
   console.log('Custom Leave Event Triggered!')
 }
 useScrollFade('.fade-element', 'bottom', handleEnter, handleLeave)
+useScrollFade('.fade-element1', 'right')
 </script>
 
 <style scoped>
