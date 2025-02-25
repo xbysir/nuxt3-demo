@@ -32,7 +32,7 @@ export default defineNuxtConfig({
   },
   devServer: {
     host: localhost,
-    port: 8303
+    port: 3000
   },
   nitro: {
     devProxy: {
