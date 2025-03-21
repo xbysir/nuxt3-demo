@@ -1,19 +1,5 @@
 <template>
   <div id="home-page">
-    <picture class="tcl-image__picture" data-alt="红色 Model S 加速行驶在河边公路上">
-      <!-- 针对小屏幕设备（最大宽度 599px） -->
-      <source srcset="@/assets/Homepage-Model-3-Mobile-US.avif" media="(max-width: 599px)" />
-      <!-- 针对大屏幕设备（最小宽度 600px） -->
-      <source srcset="@/assets/Homepage-Model-3-Desktop-US.avif" media="(min-width: 600px)" />
-      <!-- 针对竖屏大屏幕设备（最小宽度 600px 且方向为 portrait） -->
-      <source
-        srcset="@/assets/Homepage-Model-3-Mobile-US.avif"
-        media="(min-width: 600px) and (orientation: portrait)"
-      />
-      <!-- 默认图像 -->
-      <img src="@/assets/Homepage-Model-3-Desktop-US.avif" alt="红色 Model S 加速行驶在河边公路上" />
-    </picture>
-
     <!-- bg -->
     <section class="bg-home h-screen bg-cover bg-center sm:min-h-screen">
       <div class="w-full text-center text-white">
