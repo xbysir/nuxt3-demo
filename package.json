@@ -32,6 +32,7 @@
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.1",
     "@pinia/nuxt": "^0.7.0",
+    "@tailwindcss/vite": "^4.0.16",
     "@vueuse/core": "^11.3.0",
     "@vueuse/nuxt": "^11.3.0",
     "address": "2.0.1",
@@ -41,6 +42,8 @@
     "nuxt": "^3.14.1592",
     "nuxt-icons": "^3.2.1",
     "pinia": "^2.2.6",
+    "tailwindcss": "^4.0.16",
+    "vite": "^6.2.3",
     "vue": "latest",
     "vue-router": "latest"
   },
@@ -49,7 +52,6 @@
     "@commitlint/config-conventional": "^19.6.0",
     "@eslint/js": "^9.15.0",
     "@nuxtjs/stylelint-module": "^5.2.0",
-    "@nuxtjs/tailwindcss": "^6.12.2",
     "@release-it/conventional-changelog": "^9.0.3",
     "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",

@@ -2,7 +2,10 @@ module.exports = {
   // 这里保证 stylelint-config-recommended-vue 放在最后，不然 vue 文件会报错
   extends: ['stylelint-config-standard', 'stylelint-config-recommended-vue'],
   plugins: ['stylelint-order'],
+  ignoreFiles: ['src/assets/styles/tailwind.css'],
   rules: {
+    'import-notation': null,
+
     'no-empty-source': null,
     // 禁止空块
     'block-no-empty': true,

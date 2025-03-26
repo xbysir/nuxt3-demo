@@ -1,4 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from '@tailwindcss/vite'
 const address = require('address')
 const localhost = address.ip() || 'localhost'
 export default defineNuxtConfig({
@@ -14,8 +14,8 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  css: ['@/assets/styles/normailze.css'],
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@vueuse/nuxt', '@nuxtjs/stylelint-module'],
+  css: ['~/assets/styles/normailze.css', '~/assets/styles/tailwind.css'],
+  modules: ['@pinia/nuxt', '@vueuse/nuxt', '@nuxtjs/stylelint-module'],
   plugins: ['@/plugins/antd.js', '@/plugins/aos.client.js'],
   vite: {
     // 样式处理配置
@@ -28,7 +28,8 @@ export default defineNuxtConfig({
           additionalData: '@use "@/assets/styles/var.scss" as *;'
         }
       }
-    }
+    },
+    plugins: [tailwindcss()]
   },
   devServer: {
     host: localhost,
@@ -48,11 +49,5 @@ export default defineNuxtConfig({
         proxy: 'http://testapi.xuexiluxian.cn/api/**'
       }
     }
-  },
-  tailwindcss: {
-    cssPath: '~/assets/styles/tailwind.css',
-    configPath: 'tailwind.config.js',
-    exposeConfig: false,
-    config: {}
   }
 })
