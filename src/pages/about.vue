@@ -152,7 +152,7 @@
 </template>
 
 <script setup>
-import { getDocsApi, getDocsApi2 } from '~/api/about'
+// import { getDocsApi, getDocsApi2 } from '~/api/about'
 useSeoMeta({
   title: 'About Me',
   ogTitle: 'About Me - Developer Portfolio',
@@ -161,8 +161,8 @@ useSeoMeta({
   ogImage: 'https://example.com/about-image.png',
   twitterCard: 'summary_large_image'
 })
-const res = await getDocsApi()
-console.log(res, 'data1')
-const res1 = await getDocsApi2()
-console.log(res1.data.value, 'data2')
+// const res = await getDocsApi()
+// console.log(res, 'data1')
+// const res1 = await getDocsApi2()
+// console.log(res1.data.value, 'data2')
 </script>
