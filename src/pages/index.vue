@@ -1,13 +1,13 @@
 <template>
   <div id="home-page">
     <!-- bg -->
-    <section class="bg-home min-h-9/12 bg-cover bg-center sm:min-h-screen md:min-h-9/12">
+    <section class="bg-home min-h-9/12 bg-cover bg-center sm:min-h-screen md:min-h-9/12 lg:min-h-screen">
       <div class="w-full text-center text-white">
         <div class="mx-auto">
           <div class="mb-14 flex items-center justify-center pt-20 sm:mb-24 sm:pt-20" data-aos="fade-right">
-            <img src="../assets/images/logo-big.png" alt="..." width="130" />
+            <img src="../assets/images/logo-big.png" alt="logo" width="130" />
           </div>
-          <h1 class="mb-12 text-4xl text-white sm:text-6xl" data-aos="fade-left">NUXT 3 NUXT!</h1>
+          <h1 class="mb-12 text-4xl text-white sm:text-6xl lg:text-7xl" data-aos="fade-left">NUXT 3 NUXT!</h1>
           <p class="m-auto w-7/12 pb-4 text-2xl sm:text-3xl" data-aos="fade-left">WELCOME NUXT3 WORLD!</p>
         </div>
       </div>
