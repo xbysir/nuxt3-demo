@@ -15,49 +15,30 @@ body {
 
 /* 定义整个滚动条 */
 ::-webkit-scrollbar {
-  width: 12px; /* 设置垂直滚动条的宽度 */
-  height: 8px; /* 设置水平滚动条的高度 */
+  width: 12px;
+  height: 6px;
 }
 
 /* 滚动条的轨道 */
 ::-webkit-scrollbar-track {
-  border-radius: 10px; /* 设置轨道的圆角 */
-  background: #f1f1f1; /* 设置轨道的背景色 */
+  border-radius: 10px;
+  background: #f1f1f1;
 }
 
 /* 滚动条的滑块（即拖动的部分） */
 ::-webkit-scrollbar-thumb {
-  border: 3px solid #f1f1f1; /* 设置滑块边框，增加视觉效果 */
-  border-radius: 10px; /* 设置滑块的圆角 */
-  background: #888888; /* 设置滑块的颜色 */
+  border: 3px solid #f1f1f1;
+  border-radius: 10px;
+  background: #888888;
 }
 
 /* 滚动条滑块的鼠标悬停状态 */
 ::-webkit-scrollbar-thumb:hover {
-  background: #313131; /* 鼠标悬停时，滑块颜色变深 */
-}
-
-/* 滚动条按钮（不常用，通常只在水平和垂直同时滚动时出现） */
-::-webkit-scrollbar-button {
-  display: block;
-  background-color: #dddddd;
+  background: #313131;
 }
 
 label {
   font-weight: 700;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-p {
-  margin: 0;
-  padding: 0;
 }
 
 *,
@@ -75,7 +56,6 @@ a,
 a:focus,
 a:hover {
   text-decoration: none;
-  color: inherit;
   cursor: pointer;
 }
 

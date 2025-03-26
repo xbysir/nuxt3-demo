@@ -1,14 +1,14 @@
 <template>
   <div id="home-page">
     <!-- bg -->
-    <section class="bg-home h-screen bg-cover bg-center sm:min-h-screen">
+    <section class="bg-home min-h-9/12 bg-cover bg-center sm:min-h-screen md:min-h-9/12">
       <div class="w-full text-center text-white">
         <div class="mx-auto">
           <div class="mb-14 flex items-center justify-center pt-20 sm:mb-24 sm:pt-20" data-aos="fade-right">
             <img src="../assets/images/logo-big.png" alt="..." width="130" />
           </div>
-          <h1 class="mb-12 text-6xl text-white" data-aos="fade-left">NUXT 3 NUXT!</h1>
-          <p class="m-auto w-7/12 pb-4 text-3xl" data-aos="fade-left">WELCOME NUXT3 WORLD!</p>
+          <h1 class="mb-12 text-4xl text-white sm:text-6xl" data-aos="fade-left">NUXT 3 NUXT!</h1>
+          <p class="m-auto w-7/12 pb-4 text-2xl sm:text-3xl" data-aos="fade-left">WELCOME NUXT3 WORLD!</p>
         </div>
       </div>
     </section>
@@ -16,7 +16,7 @@
     <section class="overflow-hidden p-10">
       <div class="title mb-4 text-center">
         <div
-          class="inline-block py-3 text-4xl font-bold uppercase text-black"
+          class="inline-block py-3 text-4xl font-bold text-black uppercase"
           style="border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc"
           data-aos="fade-up"
         >
@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="content flex flex-col justify-center md:flex-row">
-        <div class="content-left mb-6 w-full md:mb-0 md:mr-6 md:w-6/12" data-aos="fade-up-right">
+        <div class="content-left mb-6 w-full md:mr-6 md:mb-0 md:w-6/12" data-aos="fade-up-right">
           <p class="mb-2">
             An sincerity so extremity he additions. Her yet there truth merit. Mrs all projecting favourable now
             unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage strongly. Off can
@@ -43,19 +43,19 @@
           </p>
         </div>
         <div class="content-right w-full md:w-6/12" data-aos="fade-up-left">
-          <div class="item-progress mb-4">
+          <div class="item-progress mb-7 sm:mb-5">
             <div class="label text-xl">PHP</div>
             <a-progress :percent="80" status="active" :show-info="false" />
           </div>
-          <div class="item-progress mb-4">
+          <div class="item-progress mb-7 sm:mb-5">
             <div class="label text-xl">Javascript</div>
             <a-progress :percent="50" status="active" :show-info="false" />
           </div>
-          <div class="item-progress mb-4">
+          <div class="item-progress mb-7 sm:mb-5">
             <div class="label text-xl">HTML Coding</div>
             <a-progress :percent="70" status="active" :show-info="false" />
           </div>
-          <div class="item-progress mb-4">
+          <div class="item-progress mb-7 sm:mb-5">
             <div class="label text-xl">SEO</div>
             <a-progress :percent="100" :show-info="false" />
           </div>
@@ -66,7 +66,7 @@
     <section class="bg-gray-600 p-10">
       <div class="title mb-4 text-center">
         <div
-          class="inline-block py-3 text-4xl font-bold uppercase text-white"
+          class="inline-block py-3 text-4xl font-bold text-white uppercase"
           style="border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc"
           data-aos="fade-up"
         >
@@ -77,7 +77,7 @@
         <div class="row-list grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <div class="col-lg-4 m-2 flex flex-col items-center">
             <CodeSandboxOutlined style="font-size: 60px; color: #ffffff" />
-            <h3 class="mb-3 mt-2 text-xl text-white">Consulting</h3>
+            <h3 class="mt-2 mb-3 text-xl text-white">Consulting</h3>
             <p class="text-xs text-white">
               On on produce colonel pointed. Just four sold need over how any. In to september suspicion determine he
               prevailed admitting. On adapted an as affixed limited on. Giving cousin warmly things no spring mr be
@@ -87,7 +87,7 @@
           </div>
           <div class="col-lg-4 m-2 flex flex-col items-center">
             <Html5Outlined style="font-size: 60px; color: #ffffff" />
-            <h3 class="mb-3 mt-2 text-xl text-white">HTML Coding</h3>
+            <h3 class="mt-2 mb-3 text-xl text-white">HTML Coding</h3>
             <p class="text-xs text-white">
               On on produce colonel pointed. Just four sold need over how any. In to september suspicion determine he
               prevailed admitting. On adapted an as affixed limited on. Giving cousin warmly things no spring mr be
@@ -97,7 +97,7 @@
           </div>
           <div class="col-lg-4 m-2 flex flex-col items-center">
             <SkypeOutlined style="font-size: 60px; color: #ffffff" />
-            <h3 class="mb-3 mt-2 text-xl text-white">PHP webdelopment</h3>
+            <h3 class="mt-2 mb-3 text-xl text-white">PHP webdelopment</h3>
             <p class="text-xs text-white">
               On on produce colonel pointed. Just four sold need over how any. In to september suspicion determine he
               prevailed admitting. On adapted an as affixed limited on. Giving cousin warmly things no spring mr be
@@ -160,7 +160,7 @@
     <section class="statistics-bg relative bg-cover bg-center sm:h-80">
       <div class="container mx-auto flex h-full flex-row items-center justify-center text-center">
         <div
-          class="list mt-4 grid grid-cols-1 items-center justify-center gap-10 uppercase text-white sm:grid-cols-4 sm:flex-row sm:flex-wrap"
+          class="list mt-4 grid grid-cols-1 items-center justify-center gap-10 text-white uppercase sm:grid-cols-4 sm:flex-row sm:flex-wrap"
           data-aos="fade-up"
           data-aos-offset="0"
         >
@@ -219,7 +219,7 @@ useSeoMeta({
 </script>
 <style lang="scss" scoped>
 .bg-home {
-  background-image: url('../assets/images/home.jpg');
+  background-image: url('../assets/images/indexPage.avif');
 }
 .statistics-bg {
   background-image: url('../assets/images/parallax.jpg');
