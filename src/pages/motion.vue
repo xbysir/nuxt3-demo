@@ -1,9 +1,16 @@
 <template>
-  <div>
+  <div class="motion">
     <div class="title" v-motion-roll-left>move title</div>
 
-    <div class="box" v-for="(item, index) in items" :key="item.id" v-motion-slide-visible-bottom :delay="index * 200">
-      测试{{ index }}
+    <div
+      class="box"
+      v-for="(item, index) in items"
+      :key="item.id"
+      v-motion-slide-visible-once-bottom
+      :delay="index * 200"
+      :repeact="0"
+    >
+      测试{{ index + 1 }}
     </div>
 
     <div
@@ -25,6 +32,10 @@
     <div v-motion :initial="initial" :enter="enter" class="dance">Hello</div>
 
     <div style="height: 1000px"></div>
+
+    <Motion preset="rollVisibleOnceRight" :repeat="0">
+      <span>最终文字</span>
+    </Motion>
 
     <div v-motion-slide-visible-bottom class="box">最终文字</div>
 
@@ -63,6 +74,13 @@ const enter = ref({
 </script>
 
 <style scoped>
+.motion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
   font-size: 24px;
   color: red;
@@ -74,8 +92,11 @@ const enter = ref({
 }
 
 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
-  width: 100%;
+  width: 200px;
   height: 100px;
   background-color: aqua;
 }
