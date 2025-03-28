@@ -36,6 +36,8 @@
             <nuxt-link to="/about" class="hover:text-white">About</nuxt-link>
             <nuxt-link to="/search" class="hover:text-white">Search</nuxt-link>
             <nuxt-link to="/list" class="hover:text-white">List</nuxt-link>
+            <nuxt-link to="/fade" class="hover:text-white">Fade</nuxt-link>
+            <nuxt-link to="/motion" class="hover:text-white">Motion</nuxt-link>
           </div>
         </div>
       </div>

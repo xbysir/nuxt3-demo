@@ -6,6 +6,22 @@ export default defineNuxtConfig({
     public: {
       API_BASE_DEV: 'http://testapi.xuexiluxian.cn/api',
       API_BASE_PROD: 'http://testapi.xuexiluxian.cn/api'
+    },
+    motion: {
+      directives: {
+        'pop-bottom': {
+          initial: {
+            scale: 0,
+            opacity: 0,
+            y: 100
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            y: 0
+          }
+        }
+      }
     }
   },
   srcDir: 'src/',
@@ -15,7 +31,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   css: ['~/assets/styles/normailze.css', '~/assets/styles/tailwind.css'],
-  modules: ['@pinia/nuxt', '@vueuse/nuxt', '@nuxtjs/stylelint-module'],
+  modules: ['@pinia/nuxt', '@vueuse/nuxt', '@nuxtjs/stylelint-module', '@vueuse/motion/nuxt'],
   plugins: ['@/plugins/antd.js', '@/plugins/aos.client.js'],
   vite: {
     // 样式处理配置

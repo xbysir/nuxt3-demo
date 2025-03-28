@@ -57,7 +57,8 @@ const navItems = ref([
   { name: 'About', link: '/about' },
   { name: 'Search', link: '/search' },
   { name: 'List', link: '/list' },
-  { name: 'Fade', link: '/fade' }
+  { name: 'Fade', link: '/fade' },
+  { name: 'Motion', link: '/motion' }
 ])
 const showNav = () => {
   visible.value = true
