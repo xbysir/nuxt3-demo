@@ -1,3 +1,21 @@
+## <small>0.0.2 (2025-03-29)</small>
+
+- feat: 部署 ([8bf98d6](https://github.com/xbysir/nuxt3-demo/commit/8bf98d6))
+- feat: 存储token ([5e033f9](https://github.com/xbysir/nuxt3-demo/commit/5e033f9))
+- feat: 多个使用 ([25d29d6](https://github.com/xbysir/nuxt3-demo/commit/25d29d6))
+- feat: 配置拦截器的封装 ([8787cd9](https://github.com/xbysir/nuxt3-demo/commit/8787cd9))
+- feat: 使用motion ([53e13ad](https://github.com/xbysir/nuxt3-demo/commit/53e13ad))
+- feat: 数据请求 ([b9aeb14](https://github.com/xbysir/nuxt3-demo/commit/b9aeb14))
+- feat: 响应式背景图 ([ef03a80](https://github.com/xbysir/nuxt3-demo/commit/ef03a80))
+- feat: add ignore ([568c311](https://github.com/xbysir/nuxt3-demo/commit/568c311))
+- feat: gsap使用 ([aab049b](https://github.com/xbysir/nuxt3-demo/commit/aab049b))
+- feat: tailwind4.0 ([d5bbeda](https://github.com/xbysir/nuxt3-demo/commit/d5bbeda))
+- fix: 调整背景图 ([3fa7733](https://github.com/xbysir/nuxt3-demo/commit/3fa7733))
+- fix: 调整图片 ([5454890](https://github.com/xbysir/nuxt3-demo/commit/5454890))
+- fix: 动画执行一次 ([91162ed](https://github.com/xbysir/nuxt3-demo/commit/91162ed))
+- fix: 请求 ([b2a85e5](https://github.com/xbysir/nuxt3-demo/commit/b2a85e5))
+- fix: 图片 ([a67677c](https://github.com/xbysir/nuxt3-demo/commit/a67677c))
+
 ## <small>0.0.1 (2024-12-03)</small>
 
 - feat: 14.42测试 ([868d5c1](https://github.com/xbysir/nuxt3-demo/commit/868d5c1))
